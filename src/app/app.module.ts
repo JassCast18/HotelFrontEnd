@@ -11,6 +11,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { PrincipalComponent } from './components/principal/principal.component';
 import { AboutComponent } from './components/about/about.component';
 import { ItemComponent } from './components/item/item.component';
+import { FormsModule } from '@angular/forms';
+import { SesionComponent } from './components/sesion/sesion.component';
 
 @NgModule({
   declarations: [
@@ -19,12 +21,14 @@ import { ItemComponent } from './components/item/item.component';
     FooterComponent,
     PrincipalComponent,
     AboutComponent,
-    ItemComponent
+    ItemComponent,
+    SesionComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    app_routing
+    app_routing,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
